@@ -1,0 +1,20 @@
+<itsabeastystatewerein version='2.0' sample='10000000'>
+<statenode id='Tree.t:sample2_aligned'>(((1:0.0012221606479745999,3:0.0012221606479745999)5:1.5514141570347568E-4,2:0.0013773020636780756)4:8.621910750574694E-5,0:0.0014635211711838225)6:0.0</statenode>
+<statenode id='BDBirthRate.t:sample2_aligned'>BDBirthRate.t:sample2_aligned[1 1] (0.0,10000.0): 396.6953591646969 </statenode>
+<statenode id='BDDeathRate.t:sample2_aligned'>BDDeathRate.t:sample2_aligned[1 1] (0.0,1.0): 0.02440924606214476 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"BirthDeathBICEPSEpochTop.t:sample2_aligned","p":0.07230434925133412,"accept":40704,"reject":205985,"acceptFC":40656,"rejectFC":205705,"rejectIv":196059,"rejectOp":196059},
+{"id":"BirthDeathBICEPSEpochAll.t:sample2_aligned","p":0.08955829518558418,"accept":38041,"reject":208798,"acceptFC":38001,"rejectFC":208513,"rejectIv":196582,"rejectOp":196582},
+{"id":"BirthDeathBICEPSTreeFlex.t:sample2_aligned","p":0.14287757142503452,"accept":105856,"reject":141249,"acceptFC":105571,"rejectFC":141200,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathTreeRootScaler.t:sample2_aligned","p":0.19563060294406395,"accept":85570,"reject":283838,"acceptFC":85330,"rejectFC":283575,"rejectIv":113629,"rejectOp":113629},
+{"id":"BirthDeathUniformOperator.t:sample2_aligned","p":1.5142393672211054,"accept":1140225,"reject":2565273,"acceptFC":1135660,"rejectFC":2564786,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathSubtreeSlide.t:sample2_aligned","p":0.5282908072358977,"accept":6,"reject":1852045,"acceptFC":5,"rejectFC":1849553,"rejectIv":925534,"rejectOp":925534},
+{"id":"BirthDeathNarrow.t:sample2_aligned","p":"NaN","accept":173467,"reject":1678193,"acceptFC":173207,"rejectFC":1675966,"rejectIv":0,"rejectOp":0},
+{"id":"BirthDeathWide.t:sample2_aligned","p":"NaN","accept":7360,"reject":362285,"acceptFC":7341,"rejectFC":361824,"rejectIv":222395,"rejectOp":222395},
+{"id":"BirthDeathWilsonBalding.t:sample2_aligned","p":"NaN","accept":2567,"reject":368183,"acceptFC":2558,"rejectFC":367687,"rejectIv":261324,"rejectOp":261324},
+{"id":"BirthRateScaler.t:sample2_aligned","p":1.1054331819911962,"accept":110974,"reject":259217,"acceptFC":110728,"rejectFC":258989,"rejectIv":120256,"rejectOp":0},
+{"id":"DeathRateScaler.t:sample2_aligned","p":2.1262251469048534,"accept":82613,"reject":287552,"acceptFC":82340,"rejectFC":287332,"rejectIv":133754,"rejectOp":133754}
+]}
+-->
