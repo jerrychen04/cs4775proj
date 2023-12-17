@@ -22,7 +22,7 @@ conda install tensorflow
 You can also conda install the requirements you need from requirements.txt if you choose
 
 
-## Run NN Model/Topology Predictions (from this paper: https://www.biorxiv.org/content/10.1101/2023.07.12.548770v1.article-metrics):
+## Run NN Model/Topology Predictions (instructions from this paper: https://www.biorxiv.org/content/10.1101/2023.07.12.548770v1.article-metrics):
 
 **DISCLAIMER: We refactored the NN repository to WORKS FOR WINDOWS 11+ currently as our team members used windows instead of mac/linux.**
 
@@ -38,20 +38,19 @@ make
 ```
 python3 ModelPredictorLoaded.py -sequence_type (*) -NN_name (**) -alignment_file (***)
 ```
-where (*) is DNA or AA
-(**) is a name of the substitution model neural network predictor folder
-(***) is a name of the multiple-sequence-alignment file
+where -sequence_type is DNA or AA
+-NN_name is a name of the substitution model neural network predictor folder
+-alignment_file is a name of the multiple-sequence-alignment file
 For trained topology neural network run:
 
 ```
 python3 TopologyPredictorLoaded.py -sequence_type (*) -NN_name (**) -alignment_file (***) -substitution_model (****)
 ```
 
-where (*) DNA or AA
-(**) is a name of the substitution model neural network predictor folder
-(***) is a name of the multiple-sequence-alignment file
-(****) is 'JC','K2P','F81','F84','HKY','GTR' - nucleotide substitution models
-(****) is 'JTT','LG','WAG_OLD','WAG','WAG_STAR','DAY' - amino acid substitution models
+where -sequence_type is DNA or AA
+-NN_name is a name of the substitution model neural network predictor folder
+-alignment_file is a name of the multiple-sequence-alignment file
+-substitution_model is 'JC','K2P','F81','F84','HKY','GTR' - nucleotide substitution models
 
 Download more topology weights here (we only included GTR in our repo): https://datadryad.org/stash/dataset/doi:10.5061/dryad.ksn02v783
 
