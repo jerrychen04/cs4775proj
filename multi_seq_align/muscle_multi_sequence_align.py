@@ -28,8 +28,8 @@ def multiple_sequence_alignment(input_file, output_file):
     print("Alignment completed. Output file created:", output_file)
 
 
-# Example usage
-input_fasta = "your_input_file.fasta"  # Replace with your input file path
-output_fasta = "aligned_sequences.fasta"  # Output file
+# usage example
+input_fasta = "your_input_file.fasta"
+output_fasta = "aligned_sequences.fasta"
 
 multiple_sequence_alignment(input_fasta, output_fasta)

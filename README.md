@@ -1,0 +1,1 @@
+We have already preprocessed and multi sequence aligned our SARS-Cov-2 dataset located under the folder `custom_covid_dataset`. If you want to align more proprietTo execute our pipeline, run the following:
