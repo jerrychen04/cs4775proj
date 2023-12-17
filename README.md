@@ -6,9 +6,32 @@
 
 We have already preprocessed and multi sequence aligned our SARS-Cov-2 dataset located under the folder `custom_covid_dataset`. If you want to align more proprietary data collected in .fasta format, run the MUSCLE alignment on MEGA (https://www.megasoftware.net/) or msa alignment script. 
 
+## Dependencies and Conda Environment
+To setup the dependencies, simply run:
+```
+pip install -r requirements.txt
+```
+
+To setup the Tensorflow conda environment, run:
+```
+conda create --name cs4775proj 
+conda activate cs4775proj 
+conda install tensorflow
+```
+
+You can also conda install the requirements you need from requirements.txt if you choose
+
+
 ## Run NN Model/Topology Predictions (from this paper: https://www.biorxiv.org/content/10.1101/2023.07.12.548770v1.article-metrics):
 
 **DISCLAIMER: We refactored the NN repository to WORKS FOR WINDOWS 11+ currently as our team members used windows instead of mac/linux. If you want the original linux/mac compatability consult the repository in the paper**
+Run this to create an instance of quartet-pattern-counter-v1.1.exe if you don't have one already (should be a build currently in the neural_network folder)
+```
+cd neural_network
+cd quartet-pattern-counter-v1.1_src/
+make
+```
+
 ```
 python3 ModelPredictorLoaded.py -sequence_type (*) -NN_name (**) -alignment_file (***)
 ```
