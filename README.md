@@ -24,7 +24,10 @@ You can also conda install the requirements you need from requirements.txt if yo
 
 ## Run NN Model/Topology Predictions (from this paper: https://www.biorxiv.org/content/10.1101/2023.07.12.548770v1.article-metrics):
 
-**DISCLAIMER: We refactored the NN repository to WORKS FOR WINDOWS 11+ currently as our team members used windows instead of mac/linux. If you want the original linux/mac compatability consult the repository in the paper**
+**DISCLAIMER: We refactored the NN repository to WORKS FOR WINDOWS 11+ currently as our team members used windows instead of mac/linux.**
+
+If you want the original linux/mac compatability consult the repository in the paper and re-run the .py scripts from below.
+
 Run this to create an instance of quartet-pattern-counter-v1.1.exe if you don't have one already (should be a build currently in the neural_network folder)
 ```
 cd neural_network
@@ -56,7 +59,7 @@ For specific numpy/ PolyMoSim simulation data email the authors of the paper and
 
 
 ## BEAUti and BEAST2 Markov Chain Monte Carlo Simulation
-We have the .xml files generated from BEAUti in `custom_covid_dataset/sample 1 monte carlo`, etc for samples 1-4. If you want to generate your own .xml files with differing prior models or substitution models, download BEAST2 here: https://www.beast2.org/, open up BEAUTi, drag in one of the .fasta files from `custom_covid_dataset` and adjust your parameters. For simplicity, we chose the Birth Death Model with all other parameters on the "estimate" option. For the MCMC simulation, you can run BEAST2.exe directly with the .xml files located in our `custom_covid_dataset/sample {1,2,3,4} monte carlo` we generated to yield a .trees file. Convert the last simualted tree to a .nwk file from this simulation.
+We have the .xml files generated from BEAUti in `custom_covid_dataset/sample 1 monte carlo`, etc for samples 1-4. If you want to generate your own .xml files with differing prior models or substitution models, download BEAST2 here: https://www.beast2.org/, open up BEAUTi, drag in one of the .fasta files from `custom_covid_dataset` and adjust your parameters. For simplicity, we chose the Birth Death Model with all other parameters on the "estimate" option. For the MCMC simulation, you can run BEAST2.exe directly with the .xml files located in our `custom_covid_dataset/sample {1,2,3,4} monte carlo` we generated to yield a .trees file. Convert the last simulated tree to a .nwk file from this simulation.
 
 ## Final Result Analysis
 Run `nwk_tree_analysis/plot_nwk.py` and `nwk_tree_analysis/rf_distance_compare.py` to plot nextstrain plots vs. simulated ones as well as get the rf distance between them. Substitute the hard coded parameters in the comparison script to compare any two nwk sequences.
